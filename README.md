@@ -11,6 +11,8 @@ The program will read data from directory 3. The data is obtained through scanni
 
 FTEM_batch_train.ipynb is used to train a new model.
 
+Dependencies include TensorFlow, NumPy, and SciPy.
+
 ## License
 
 This project is licensed under the MIT License.
