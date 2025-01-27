@@ -22,7 +22,7 @@ python predi.py
 
 The program will read data from directory 3. The data is obtained through scanning observations, allowing for the prediction of the three-dimensional spatial location of the underground water-filled structures.
 
-FTEM_batch_train.ipynb is used to train a new model.
+FTEM_batch_train.ipynb is used to train a new model. The traindata can be download from https://zenodo.org/records/11407019
 
 The Topo directory provides specific examples for terrain-based prediction, gdata.ipynb is used to generate electromagnetic field observation data with terrain, and predi.py is used to predict the data and results will be saved in creted dir by gdata. The prediction results are saved in the "predict" folder.
 
