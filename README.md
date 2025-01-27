@@ -4,7 +4,7 @@ wherein transmitters scan along the surface while receivers are positioned withi
 can help constrain the predictions and reduce the non-uniqueness of the inversion. Trained by synthetic data, our system shows impressive adaptability to predict the 3D spatial position of waterfilled anomalies and strong robustness in the tunnel environment
 with metal interference.
 
-## Operating environment
+## Dependencies
 Ubuntu 22.04.1 LTS
 Python 3.10.6
 SimPEG 0.18.1
@@ -13,17 +13,22 @@ numpy 1.23.5
 tensorflow 2.10.0
 
 ## Install
+pip install -r requirement.txt
+conda install SimPEG --channel conda-forge
+For SimPEG, you may refer to more detail at  https://docs.simpeg.xyz/latest/content/getting_started/installing.html
 
 
-To achieve prediction, run:
+## To achieve prediction, run:
 
 python predi.py
 
 The program will read data from directory 3. The data is obtained through scanning observations, allowing for the prediction of the three-dimensional spatial location of the underground water-filled structures.
 
+
+
 FTEM_batch_train.ipynb is used to train a new model.
 
-Dependencies include TensorFlow, NumPy, and SciPy.
+
 
 ## License
 
