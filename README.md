@@ -18,7 +18,7 @@ For SimPEG, you may refer to more detail at  https://docs.simpeg.xyz/latest/cont
 
 ## To achieve prediction, run:
 
-Before prediction, you need to download the pre-trained weight model from https://zenodo.org/records/11407019, which contain UNet_model/FTEM.ckpt.data-00000-of-00001, UNet_model/FTEM.ckpt.index, UNet_model/FTEM.h5. Then place the directory containing the weight model in the same directory as the prediction code.
+Before prediction, you need to download the pre-trained weight model from https://zenodo.org/records/14745131, which contain UNet_model/FTEM.ckpt.data-00000-of-00001, UNet_model/FTEM.ckpt.index, UNet_model/FTEM.h5. Then place the directory containing the weight model in the same directory as the prediction code.
 Then run: python predi.py
 
 The program will read data from directory 3. The data is obtained through scanning observations, allowing for the prediction of the three-dimensional spatial location of the underground water-filled structures.
