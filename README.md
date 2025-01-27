@@ -24,7 +24,7 @@ The program will read data from directory 3. The data is obtained through scanni
 
 FTEM_batch_train.ipynb is used to train a new model.
 
-The Topo directory provides specific examples for terrain-based prediction, gdata is used to generate electromagnetic field observation data with terrain, and predi.py is used to predict the data in data2. The prediction results are saved in the "predict" folder.
+The Topo directory provides specific examples for terrain-based prediction, gdata.ipynb is used to generate electromagnetic field observation data with terrain, and predi.py is used to predict the data in creted dir by gdata. The prediction results are saved in the "predict" folder.
 
 
 
