@@ -3,27 +3,29 @@ We design a tunnel electromagnetic joint scan observation system and present a d
 with metal interference.
 
 ## Dependencies
-Ubuntu 22.04.1 LTS\\
-Python 3.10.6\\
-SimPEG 0.18.1\\
-scipy  1.10.0\\
-numpy 1.23.5\\
-tensorflow 2.10.0\\
+Ubuntu 22.04.1 LTS
+Python 3.10.6
+SimPEG 0.18.1
+scipy  1.10.0
+numpy 1.23.5
+tensorflow 2.10.0
 
 ## Install
-pip install -r requirement.txt\\
-conda install SimPEG --channel conda-forge\\
-For SimPEG, you may refer to more detail at  https://docs.simpeg.xyz/latest/content/getting_started/installing.html\\
+pip install -r requirement.txt
 
+conda install SimPEG --channel conda-forge
+
+For SimPEG, you may refer to more detail at  https://docs.simpeg.xyz/latest/content/getting_started/installing.html
 
 ## To achieve prediction, run:
 
-Before prediction, you need to download the pre-trained weight model from https://zenodo.org/records/14745131, which contain UNet_model/FTEM.ckpt.data-00000-of-00001, UNet_model/FTEM.ckpt.index, UNet_model/FTEM.h5. Then place the directory containing the weight model in the same directory as the prediction code.\\
+Before prediction, you need to download the pre-trained weight model from https://zenodo.org/records/14745131, which contain UNet_model/FTEM.ckpt.data-00000-of-00001, UNet_model/FTEM.ckpt.index, UNet_model/FTEM.h5. Then place the directory containing the weight model in the same directory as the prediction code.
+
 Then run: python predi.py\\
 
-The program will read data from directory 3. The data is obtained through scanning observations, allowing for the prediction of the three-dimensional spatial location of the underground water-filled structures.\\
+The program will read data from directory 3. The data is obtained through scanning observations, allowing for the prediction of the three-dimensional spatial location of the underground water-filled structures.
 
-FTEM_batch_train.ipynb is used to train a new model. The traindata can be download from https://zenodo.org/records/11407019\\
+FTEM_batch_train.ipynb is used to train a new model. The traindata can be download from https://zenodo.org/records/11407019
 
 The Topo directory provides specific examples for terrain-based prediction, gdata.ipynb is used to generate electromagnetic field observation data with terrain, and predi.py is used to predict the data and results will be saved in creted dir by gdata. The prediction results are saved in the "predict" folder.
 
