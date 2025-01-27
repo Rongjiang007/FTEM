@@ -3,6 +3,14 @@ wherein transmitters scan along the surface while receivers are positioned withi
 can help constrain the predictions and reduce the non-uniqueness of the inversion. Trained by synthetic data, our system shows impressive adaptability to predict the 3D spatial position of waterfilled anomalies and strong robustness in the tunnel environment
 with metal interference.
 
+Operating environment:
+Ubuntu 22.04.1 LTS
+Python 3.10.6
+SimPEG 0.18.1
+scipy  1.10.0
+numpy 1.23.5
+tensorflow 2.10.0
+
 To achieve prediction, run:
 
 python predi.py
