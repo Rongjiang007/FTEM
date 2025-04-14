@@ -1,4 +1,7 @@
 ## Introduction
+ Adeeplearning-basedparametricinversionforforecasting water-filled bodies position using electromagnetic method
+ 
+ 
 We design a tunnel electromagnetic joint scan observation system and present a deep learning-based parametric inversion for improved tunnel electromagnetic imaging, designed specifically for tunnel prediction of water filled structures. It utilizes a configuration wherein transmitters scan along the surface while receivers are positioned within the tunnel, employing time-domain and frequency-domain transmitters and a multi-component receiver. The DL model for the first time provides parametric imaging of two different view, forming a self-checking mechanism, which can help constrain the predictions and reduce the non-uniqueness of the inversion. Trained by synthetic data, our system shows impressive adaptability to predict the 3D spatial position of water-filled anomalies and strong robustness in the tunnel environment
 with metal interference.
 
@@ -43,7 +46,9 @@ FTEM_batch_train.ipynb is used to train a new model. The traindata can be downlo
 The Topo directory provides specific examples for terrain-based prediction, gdata.ipynb is used to generate electromagnetic field observation data with terrain, and predi.py is used to predict the data and results will be saved in creted dir by gdata. The prediction results are saved in the "predict" folder.
 
 
+## Citation
 
+Gan, L., Tang, R., Li, H., Li, F., & Rao, Y. (2025). A deep learning-based parametric inversion for forecasting water-filled bodies position using electromagnetic method. Computers & Geosciences, 105881.
 
 
 ## License
